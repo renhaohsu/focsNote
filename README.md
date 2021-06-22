@@ -65,8 +65,97 @@ Increment2完成第二個功能 (四個階段都走一遍)
 ##### 接著介紹開發流程的四個階段
 
 #### Analysis Phase 分析階段
-- 又稱為 需求階段
-- 得到一個功能/需求文件
+- 又稱為 需求工程
+- 搞清楚需要什麼功能
+- output: (寫著功能/需求的) 規格文件、需求規格書
 - 處理 what the software will do
 - 不討論 how it will be done
-- (前面說過)又分成兩種做法：procedural的或是oo的
+- (前面說過)又分成兩種做法：procedural(程序導向)的 或是oo(物件導向)的
+
+以下將這兩個做法的analysis分開說明
+
+##### procedural oriented Analysis 分析階段：程序導向
+
+- 比較早出現
+- 比較直覺
+- 軟體由一連串的procedurals組成
+- Data flow diagrams (dfd)
+
+    - 描述資料的流向 動態的
+    - 有哪些處理資料的單元
+    - data被哪些procedurals處理
+    - 來源、去哪、如何流動
+    - 整個系統裡的procedurals也可稱為process 處理資料的單元
+    
+- Entity-relationship diagrams (er圖)
+
+    - 在關聯式資料庫很常見
+    - 很像是excel表單 描述欄位、資料的關係
+    - 可用來描述資料的結構、靜態的關聯
+    - 既然如此那就ch.12再介紹
+
+
+- State diagrams (狀態圖)
+
+    - 描述系統裡狀態的改變
+    - 有events事件、刺激、
+    - 可用來描述系統裡狀態的轉移
+    - 舉例：電梯系統
+    ![軟體生命週期](./img/3.png)
+    - 停住 上移 下移 三種狀態
+    - 基本的刺激 turn on/off
+    - 收到request 請求 進行判斷 
+
+
+##### Object-oriented analysis 分析階段：物件導向
+
+註：人們常說的ｏｏ就是這個歐歐
+
+- 較流行、常見、大二的系統課會再出現
+
+- 以前介紹的流程圖也只是uml的一種、這裡介紹常用的uml圖種和觀念
+
+- Use case diagrams（使用案例圖）
+
+    - 從使用者的角度來看
+    - 描述使用者的操作
+    - 四個主要元件 system系統(灰色大框框)、use cases(紅色圓角框)、actors、relationships
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+
+#### Design Phase 設計階段
+
+- input: 需求文件
+- 搞清楚需要什麼功能
+- output: 設計文件
+- 處理 what the software will do
+- 不討論 how it will be done
+- (前面說過)又分成兩種做法：procedural(程序導向)的 或是oo(物件導向)的
+
+#### Implementation Phase 實作階段
+
+
+#### Test Phase 測試階段
+
+
+
+
+#### Template 文字
+
