@@ -68,7 +68,7 @@ Increment2完成第二個功能 (四個階段都走一遍)
 - 又稱為 需求工程
 - 搞清楚需要什麼功能
 - output: (寫著功能/需求的) 規格文件、需求規格書
-- 處理 what the software will do
+- 處理 what the software will do、what a system should be
 - 不討論 how it will be done
 - (前面說過)又分成兩種做法：procedural(程序導向)的 或是oo(物件導向)的
 
@@ -121,33 +121,70 @@ Increment2完成第二個功能 (四個階段都走一遍)
     - 描述使用者的操作
     - 四個主要元件 system系統(灰色大框框)、use cases(紅色圓角框)、actors、relationships
 
-- 
+- Class diagrams（類別圖）
 
-- 
+    - 描述系統裡有哪些類別
+    - 以及類別之間的關係
+    - 類別(紅色矩形)
+    註：instance：類別產生的實體，用范姜的話來說 就是被new出來的東西
+    
 
-- 
+- State chart (狀態圖)
 
-- 
-
-- 
-
-- 
-
-- 
-
-- 
-
-- 
+    - 描述狀態之間的轉移
+    - 比較靜態
+    - 通常會給對類別圖上的每個類別都畫一個狀態圖
 
 
 #### Design Phase 設計階段
 
 - input: 需求文件
-- 搞清楚需要什麼功能
+- 搞清楚該怎麼設計整個系統
 - output: 設計文件
-- 處理 what the software will do
-- 不討論 how it will be done
+- 定義這個系統要怎麼滿足前面分析階段定義好的功能
+- how it will be done
 - (前面說過)又分成兩種做法：procedural(程序導向)的 或是oo(物件導向)的
+
+
+以下將這兩個做法的design分開說明
+
+##### procedural oriented design 設計階段：程序導向
+
+- 主要元素 data資料、procedural處理資料的程序單元
+- 比較直覺
+- 跟前面說的一樣：軟體由一連串的procedurals組成
+- Structure charts (結構圖)
+
+    - 描述系統裡有哪些modules(模組)
+    - 模組之間的關係、模組有什麼功能、怎麼處理資料
+    - 大模組可以分解成小模組
+    - 通常每個模組的功能都很明確很單一
+
+- Modularity 模組化(的程度)
+
+    - 很大很複雜的任務被切成小的模組
+    - 小的模組互相獨立、盡量把關係分解到最少
+    - 分得越小越容易懂
+    - 
+    - coupling 耦合度：互相bond(關聯／影響)的程度有多高
+    - coupling 越鬆散越好、模組之間越獨立越好
+    - 
+    - cohesion 內聚力：模組內部的成分跟模組的主要目標的關聯程度
+    - cohesion 越高越好
+    - 通常cohesion越高 模組越獨立
+    - 
+    - 整體設計目標：loosely coupling 鬆散耦合、high cohesion 高度內聚
+
+- 
+
+
+---
+
+```c
+ 完蛋啦10-4沒辦法聽啊
+```
+
+---
 
 #### Implementation Phase 實作階段
 
@@ -156,6 +193,4 @@ Increment2完成第二個功能 (四個階段都走一遍)
 
 
 
-
-#### Template 文字
 
