@@ -175,8 +175,6 @@ Increment2完成第二個功能 (四個階段都走一遍)
     - 
     - 整體設計目標：loosely coupling 鬆散耦合、high cohesion 高度內聚
 
-- 
-
 
 ---
 
@@ -186,11 +184,74 @@ Increment2完成第二個功能 (四個階段都走一遍)
 
 ---
 
+##### oo design 設計階段：物件導向
+
+- 說明class的細節
+- 跟前面說的一樣：class由attributes和methods組成，此階段要詳細列出他們
+- 舉例 電梯的uml圖 
+    ![軟體生命週期](./img/4.png)
+
+
+
+---
+##### 因為老師沒開放下載所以10-4聽不到講解錄音檔所以我就照貼ptt的文字啦哈哈哈哈哈
+---
+
+
 #### Implementation Phase 實作階段
 
+- programmers write the code for the modules in procedure-oriented design, or write the program units to implement classes in object-oriented design.
+
+- Choice of language 你團隊用什麼導向就選適合的語言、課本說想選即使是程序導向但你要用c++也沒問題
+
+<p style=color:grey;font-size:10px>讀者註：第四代高階語言幾乎都有class可以寫，所以主要其實看開發環境和需求決定：需要大量運算建議c/c++，要快速開發測試可選python，有統計目的通常選Ｒ，要兼顧速度和嚴謹可試Golang</p>
+
+- Software quality
+    - satisfies the user’s requirements
+    - meets the operating standards of the organization
+    - runs efficiently on the hardware for which it was developed
+
+- Software quality factors
+    - operability
+    - maintainability 
+    - transferability
+    ![軟體生命週期](./img/5.png)
 
 #### Test Phase 測試階段
 
+- find errors
+- a good testing strategy is the one that finds most errors
 
+    ![軟體生命週期](./img/6.png)
 
+##### Glass-box testing (white-box testing)
 
+- knowing the internal structure of the software
+- goal: to determine whether all components of the software do what they are designed for
+- assumes that the tester knows everything about the software
+- briefly discuss two of them: basis path testing and control structure testing. 
+
+- Basis path testing
+    - creates a set of test cases that executes every statement in the software at least once.
+
+- Control structure testing
+    - Condition testing
+    - Data flow testing
+    - Loop testing
+
+##### Black-box testing
+
+- without knowing what is inside it and without knowing how it works
+- tests the functionality of the software in terms of what the software is supposed to accomplish
+
+- Exhaustive testing
+    - test the software for all possible values in the input domain
+    - However, usually the input domain is so huge that it is often impractical to do so
+
+- Random testing
+    - a subset of values in the input domain is selected for testing
+    - It is very important that the subset be chosen in such a way that the values are distributed over the domain input.
+
+- Boundary-value testing
+    - Errors often happen when boundary values are encountered. 
+    
